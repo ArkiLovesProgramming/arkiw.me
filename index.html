@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arki Wang | AI & Full-Stack Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            animation: {
+              'marquee': 'marquee 30s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+      /* Keep only functional styles, remove hardcoded colors */
+      body {
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Smooth transitions for theme switching */
+      * {
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+      }
+
+      /* Custom scrollbar for minimalist feel */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #333333;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cccccc;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555555;
+      }
+
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-black text-black dark:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
