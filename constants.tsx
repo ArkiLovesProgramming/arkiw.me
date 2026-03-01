@@ -80,10 +80,11 @@ export const ARTICLES_DATA: Article[] = [
 ];
 
 export const CERTIFICATES: Certificate[] = [
-  { name: 'AWS Certified Developer', issuer: 'Amazon Web Services', id: 'AWS-1', image: '/certificates/aws-certified-developer-associate.b4c74a12.png' },
-  { name: 'GitHub Actions (CI/CD)', issuer: 'GitHub', id: 'GH-1', image: '/certificates/github-actions.6a453450.png' },
-  { name: 'Professional Scrum Master I', issuer: 'Scrum.org', id: 'PSM-1', image: '/certificates/professional-scrum-master-i-psm-i.d96a1801.png' },
-  { name: 'Meta Backend Developer', issuer: 'Meta', id: 'META-1', image: '/certificates/Meta.png' },
+  { name: 'AWS Certified Developer', issuer: 'Amazon Web Services', id: 'AWS-1', image: '/certificates/aws-certified-developer-associate.b4c74a12.png', url: 'https://www.credly.com/badges/e7c2573a-3dee-492b-a546-9171688adbf2/linked_in_profile' },
+  { name: 'GitHub Actions (CI/CD)', issuer: 'GitHub', id: 'GH-1', image: '/certificates/github-actions.6a453450.png', url: 'https://www.credly.com/badges/fb011777-c2b6-4101-9686-5b48ed6a8de8/linked_in_profile' },
+  { name: 'Professional Scrum Master I', issuer: 'Scrum.org', id: 'PSM-1', image: '/certificates/professional-scrum-master-i-psm-i.d96a1801.png', url: 'https://www.credly.com/badges/b7af8d18-325a-42ab-b257-fea0c5f81851/linked_in_profile' },
+  { name: 'Meta Backend Developer', issuer: 'Meta', id: 'META-1', image: '/certificates/Meta.png', url: 'https://www.coursera.org/account/accomplishments/specialization/UFQEPQG4LFRH' },
+  { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', id: 'AWS-CP', image: '/certificates/cloud_practioner.png', url: 'https://www.credly.com/badges/60b772c7-aa7b-46af-a31d-89f9a6a282ff/linked_in_profile' },
 ];
 
 export const EDUCATION_DATA: Education[] = [

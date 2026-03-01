@@ -10,7 +10,13 @@ import Articles from './components/Articles';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Check system preference on initial load
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
     // Sync logic with the config we added to index.html

@@ -12,7 +12,13 @@ const Certificates: React.FC = () => {
       <div className="flex overflow-hidden relative">
         <div className="animate-marquee whitespace-nowrap py-2">
           {[...CERTIFICATES, ...CERTIFICATES].map((cert, idx) => (
-            <div key={`${cert.id}-${idx}`} className="inline-flex items-center gap-4 mx-10 group">
+            <a 
+              key={`${cert.id}-${idx}`} 
+              href={cert.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-4 mx-10 group"
+            >
               <div className="w-10 h-10 flex items-center justify-center">
                 {cert.image ? (
                   <img src={cert.image} alt={cert.name} className="w-full h-full object-contain" />
@@ -26,7 +32,7 @@ const Certificates: React.FC = () => {
                 <span className="text-zinc-800 dark:text-zinc-200 font-bold text-sm tracking-tight group-hover:text-black dark:group-hover:text-white transition-colors">{cert.name}</span>
                 <span className="text-zinc-400 dark:text-zinc-600 font-mono text-[9px] uppercase tracking-widest">{cert.issuer}</span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

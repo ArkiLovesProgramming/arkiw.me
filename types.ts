@@ -29,6 +29,7 @@ export interface Certificate {
   issuer: string;
   id: string;
   image?: string;
+  url?: string;
 }
 
 export interface Education {
