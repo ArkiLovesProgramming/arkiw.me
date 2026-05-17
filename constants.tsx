@@ -12,6 +12,17 @@ export const NAV_LINKS = [
 export const EXPERIENCE_DATA: Experience[] = [
   {
     id: '1',
+    role: 'Full Stack AI Engineer',
+    company: 'RBC — Toronto, ON',
+    period: 'Feb 2026 - Present',
+    description: [
+      'Designed API architecture for a voice platform app, integrating load balancer and fallback/retry mechanisms to guarantee high availability and disaster recovery.',
+      'Established CI/CD pipelines with enterprise-grade code quality and security checks, leveraging SonarQube and Snyk (SAST/DAST).',
+      'Integrated ElasticSearch to centralize system and traffic logging, and utilized PostgreSQL to build a comprehensive auditing framework for user transactions and activities.'
+    ],
+  },
+  {
+    id: '2',
     role: 'Software Developer',
     company: 'HSBC Electronic Data Processing (Guangdong) Limited',
     period: 'Feb 2025 - Nov 2025',
@@ -23,23 +34,13 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: '2',
+    id: '3',
     role: 'Software Engineer',
     company: 'SAE Magnetics (HK) LTD (TDK Group)',
     period: 'Oct 2024 - Feb 2025',
     description: [
       'Engineered an automated data pipeline using NumPy/Pandas to analyze HDD performance metrics, replacing manual workflows and slashing reporting time by ~95%.',
       'Developed a multi-threaded Python daemon on Linux to orchestrate system testing workflows, implementing a PID control algorithm to synchronize device states with <1s latency.'
-    ],
-  },
-  {
-    id: '3',
-    role: 'Java Software Engineer',
-    company: 'Beijing Seeyon Software Co., Ltd.',
-    period: 'Feb 2021 - Aug 2021',
-    description: [
-      'Developed a third-party software access module using Spring Boot by integrating multiple third-party APIs.',
-      'Resolved abnormal data-structure issues arising from client version migrations by building a Java utility with Hibernate to automate SQL execution, reducing labor costs by ~70%.'
     ],
   },
 ];
